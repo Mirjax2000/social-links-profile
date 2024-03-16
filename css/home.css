@@ -265,6 +265,7 @@ img {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
+  background-color: #808080;
 }
 
 *,
@@ -276,16 +277,22 @@ img {
 
 /* --- typography --- */
 @font-face {
-  font-family: "Figtree";
-  src: url(../assets/webfonts/Font-face/Figtree-Medium.woff2) format("woff2");
-  src: url(../assets/webfonts/Font-face/Figtree-Medium.ttf) format("ttf");
-  font-weight: 500;
+  font-family: "Inter";
+  src: url(../assets/webfonts/Font-face/Inter-Regular.woff2) format("woff2");
+  src: url(../assets/webfonts/Font-face/Inter-Regular.ttf) format("ttf");
+  font-weight: 400;
 }
 @font-face {
-  font-family: "Figtree";
-  src: url(../assets/webfonts/Font-face/Figtree-ExtraBold.woff2) format("woff2");
-  src: url(../assets/webfonts/Font-face/Figtree-ExtraBold.ttf) format("ttf");
-  font-weight: 800;
+  font-family: "Inter";
+  src: url(../assets/webfonts/Font-face/Inter-SemiBold.woff2) format("woff2");
+  src: url(../assets/webfonts/Font-face/Inter-SemiBold.ttf) format("ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Inter";
+  src: url(../assets/webfonts/Font-face/Inter-Bold.woff2) format("woff2");
+  src: url(../assets/webfonts/Font-face/Inter-Bold.ttf) format("ttf");
+  font-weight: 700;
 }
 /*   --- general settings --- */
 /* --- general settings --- */
@@ -295,20 +302,20 @@ html {
   font-size: var(--font-size);
 }
 html ::-moz-selection {
-  background-color: #f4d04e;
+  background-color: #1F1F1F;
   color: white;
 }
 html ::selection {
-  background-color: #f4d04e;
+  background-color: #1F1F1F;
   color: white;
 }
 
 /*  --- header --- */
 /* --- home main --- */
 .home {
-  font-family: Figtree, sans-serif;
+  font-family: Inter, sans-serif;
   font-optical-sizing: auto;
-  background-color: #f4d04e;
+  background-color: #1F1F1F;
   height: 100dvh;
   width: 100dvw;
   display: -webkit-box;
@@ -322,96 +329,5 @@ html ::selection {
           align-items: center;
 }
 
-.container,
-.card__img {
-  overflow: hidden;
-  border-radius: 1.25em;
-}
-
-.container {
-  max-width: 24em;
-  border: 1px solid black;
-  -webkit-box-shadow: 1em 1em 0em black;
-          box-shadow: 1em 1em 0em black;
-}
-
-.card {
-  background-color: #ffffff;
-  padding: 1.5em;
-}
-.card h2,
-.card h3 {
-  font-size: var(--bodyS);
-  font-weight: 800;
-  line-height: 1.5em;
-  color: black;
-}
-.card__content h1 a {
-  font-size: var(--heading);
-  font-weight: 800;
-  line-height: 1.5em;
-  color: black;
-  margin-block: 0.5em;
-  -webkit-transition: ease-in-out 0.2s color;
-  transition: ease-in-out 0.2s color;
-}
-.card__content h1 a:hover, .card__content h1 a:focus {
-  color: #f4d04e;
-}
-.card__content h2 {
-  font-weight: 500;
-  color: black;
-}
-.card__content h3 {
-  display: inline-block;
-  background-color: #f4d04e;
-  margin-top: 1.7142857143em;
-  margin-bottom: 0.8571428571em;
-  padding: 0.2857142857em 0.8571428571em;
-}
-.card__content p {
-  color: #808080;
-  font-weight: 500;
-  font-size: var(--bodyM);
-  line-height: 1.5em;
-  margin-bottom: 1.5em;
-}
-.card__footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 0.5625em;
-}
-.card__footer img {
-  max-width: 2em;
-  aspect-ratio: 1/1;
-}
-.card__footer h3 {
-  font-size: var(--footerH3);
-}
-
 /* mediaqueries */
-@media only screen and (max-width: 780px) {
-  :root {
-    --font-size:100%;
-    --heading:1.25rem;
-    --bodyM:0.875rem;
-    --bodyS:0.75rem;
-    --footerH3:0.875rem;
-  }
-  .container {
-    max-width: 20.4375em;
-    border: 1px solid black;
-    -webkit-box-shadow: 0.5em 0.5em 0em black;
-            box-shadow: 0.5em 0.5em 0em black;
-  }
-  .card__img img {
-    -o-object-fit: cover;
-       object-fit: cover;
-    min-height: 12.5em;
-  }
-}
 /*# sourceMappingURL=home.css.map */

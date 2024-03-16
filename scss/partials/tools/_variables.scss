@@ -7,11 +7,12 @@ $debug: false;
 
 // --- colors ---
 $clr10: #ffffff; //White
-$clr11: #f4d04e; //Primary
-$clr12: #808080; //Gray
+$clr11: #333333; //Gray
+$clr12: #1F1F1F; //Dark Gray
 $clr13: black; //Black
-$clr14: #7D889E; //Grey
+$clr14: #C4F82A; //Neon Green
 $clr15: #D5E1EF; //Light Grey
+$clr99: #808080; // Grey
 // -----------------------
 // font color
 
@@ -35,11 +36,11 @@ $clr-txt-p: $clr12;
 $clr-txt-navlinks: $clr10;
 
 // footer paragraph
-$clr-txt-footer-par: $clr10;
+$clr-txt-footer: $clr10;
 // -------------------------
 
 // backround color
-$clr-bg-body: $clr11;
+$clr-bg-body: $clr12;
 
 $clr-bg-h2: $clr11;
 
@@ -48,6 +49,7 @@ $clr-bg-card: $clr10;
 $clr-bg-active: $clr10;
 
 $clr-bg-footer: $clr10;
+$clr-bg-img: $clr99;
 // -------------------------
 
 $backroundGradient: (
@@ -61,12 +63,14 @@ $backroundGradient: (
 $font-family-SourceSans: "Source Sans 3", sans-serif;
 $font-family-Outfit: Outfit, sans-serif;
 $font-family-Figtree: Figtree, sans-serif;
+$font-family-Inter: Inter, sans-serif;
+
 $font-family-serif: Georgia, Times, 'Times New Roman', serif;
 // -------------------------------
 
 // --- border-radius ---
-$br-card: 20;
-$br-qrCode: 10;
+$br-card: 12;
+$br-btn: 8;
 // ----------------------
 
 // border color
