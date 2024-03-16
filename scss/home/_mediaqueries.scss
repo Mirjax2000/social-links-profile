@@ -1,0 +1,34 @@
+@use '../partials/tools' as *;
+@use '../partials/assembler/' as *;
+
+// ----------------------
+/* mediaqueries */
+// ----------------------
+
+@media only screen and (max-width: 780px) {
+
+    :root {
+        --font-size:#{$font-size-100};
+        --heading:#{$headingMid};
+        --bodyM:#{$bodyMMid};
+        --bodyS:#{$bodySMid};
+        --footerH3:#{$footH3Mid};
+    }
+
+    .container {
+        max-width: em(327, 16);
+        border: 1px solid $clr-br;
+        box-shadow: em(8, 16) em(8, 16) em(0, 16) $clr-shd;
+    }
+
+    .card {
+        &__img {
+            img {
+                object-fit: cover;
+                min-height: em(200, 16);
+            }
+        }
+    }
+}
+
+;

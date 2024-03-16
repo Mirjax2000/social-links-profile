@@ -1,0 +1,93 @@
+@use '../partials/tools' as *;
+@use '../partials/assembler/' as *;
+// --------------------
+/* --- home main --- */
+// --------------------
+
+.home {
+    font-family: $font-family-Figtree;
+    font-optical-sizing: auto;
+    background-color: $clr-bg-body ;
+    height: 100dvh;
+    width: 100dvw;
+    @include flexCenter;
+}
+
+.container,
+.card__img {
+    overflow: hidden;
+    border-radius: em($br-card, 16);
+}
+
+.container {
+    max-width: em(384, 16);
+    border: 1px solid $clr-br;
+    box-shadow: em(16, 16) em(16, 16) em(0, 16) $clr-shd;
+}
+
+.card {
+    background-color: $clr-bg-card;
+    padding: em(24, 16);
+
+    h2,
+    h3 {
+        font-size: var(--bodyS); //14px
+        font-weight: 800;
+        line-height: em(21, 14);
+        color: $clr-txt-H3;
+    }
+
+    &__content {
+        h1 a {
+            font-size: var(--heading); //24px
+            font-weight: 800;
+            line-height: em(36, 24);
+            color: $clr-txt-H1;
+
+            margin-block: em(12, 24);
+            transition: ease-in-out .2s color;
+
+            &:hover,
+            &:focus {
+                color: $clr-txt-heading-hover;
+            }
+        }
+
+        h2 {
+            font-weight: 500;
+            color: $clr-txt-H2;
+        }
+
+        h3 {
+            display: inline-block;
+            background-color: $clr-bg-h2 ;
+
+            margin-top: em(24, 14);
+            margin-bottom: em(12, 14);
+            padding: em(4, 14) em(12, 14);
+        }
+
+        p {
+            color: $clr-txt-p ;
+            font-weight: 500;
+            font-size: var(--bodyM); //16px
+            line-height: em(24, 16);
+            margin-bottom: em(24, 16);
+        }
+    }
+
+    &__footer {
+        display: flex;
+        align-items: center;
+        gap: em(9, 16);
+
+        img {
+            max-width: em(32, 16);
+            aspect-ratio: 1/1;
+        }
+
+        h3 {
+            font-size: var(--footerH3);
+        }
+    }
+}

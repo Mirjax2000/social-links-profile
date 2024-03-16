@@ -1,0 +1,13 @@
+@use '../tools/' as *;
+
+// --------------------
+/*   --- root css --- */
+// --------------------
+
+:root {
+    --font-size:#{$font-size-100};
+    --heading:#{$headingMax};
+    --bodyM:#{$bodyMMax};
+    --bodyS:#{$bodySMax};
+    --footerH3:#{$footH3Max};
+}
