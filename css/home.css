@@ -329,7 +329,7 @@ html ::selection {
 }
 
 .container {
-  max-width: 24em;
+  width: 24em;
   background-color: #1F1F1F;
   border-radius: 0.75em;
 }
@@ -357,13 +357,36 @@ html ::selection {
   line-height: 1.5em;
   color: #C4F82A;
   font-weight: 700;
-  margin: 0.2857142857em 0 1.7142857143em 0;
+  margin-top: 0.2857142857em;
 }
 .card h3 {
   font-size: var(--body-Bold);
   line-height: 1.5em;
   font-weight: 400;
   color: #ffffff;
+  margin: 1.7142857143em 0 1.7142857143em 0;
+}
+.card__list > :last-child {
+  margin-bottom: 0;
+}
+.card__list--item {
+  margin-bottom: 1.1428571429em;
+}
+.card__list--item a {
+  display: block;
+  font-size: var(--body-Bold);
+  line-height: 1.5em;
+  color: #ffffff;
+  font-weight: 700;
+  padding-block: 0.8571428571em;
+  border-radius: 0.5714285714em;
+  background-color: #333333;
+  -webkit-transition: ease-in-out 0.2s color, ease-in-out 0.2s background-color;
+  transition: ease-in-out 0.2s color, ease-in-out 0.2s background-color;
+}
+.card__list--item a:hover, .card__list--item a:focus {
+  background-color: #C4F82A;
+  color: black;
 }
 
 /* mediaqueries */
