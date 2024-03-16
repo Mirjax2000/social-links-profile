@@ -2,9 +2,8 @@
 :root {
   --font-size:100%;
   --heading:1.5rem;
-  --bodyM:1rem;
-  --bodyS:0.875rem;
-  --footerH3:0.875rem;
+  --body-Bold:0.875rem;
+  --body-Regular:0.875rem;
 }
 
 /*   --- normalize css --- */
