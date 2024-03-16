@@ -33,13 +33,28 @@
             min-height: em(88, 16);
             border-radius: 50%;
         }
+    }
 
-        h1 {
-            font-size: var(--heading);
-            font-size: 5rem;
-            color: $clr-txt-heading ;
-            color: white;
-        }
+    h1 {
+        font-size: var(--heading); //24px
+        line-height: em(36, 24);
+        color: $clr-txt-heading ;
+        font-weight: 600;
+    }
 
+    h2 {
+        font-size: var(--body-Bold); //14px
+        line-height: em(21, 14);
+        color: $clr-txt-H2 ;
+        font-weight: 700;
+
+        margin: em(4, 14) 0 em(24, 14) 0;
+    }
+
+    h3 {
+        font-size: var(--body-Bold); //14px
+        line-height: em(21, 14);
+        font-weight: 400;
+        color: $clr-txt-H3;
     }
 }

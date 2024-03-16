@@ -346,11 +346,24 @@ html ::selection {
   min-height: 5.5em;
   border-radius: 50%;
 }
-.card__img h1 {
+.card h1 {
   font-size: var(--heading);
-  font-size: 5rem;
+  line-height: 1.5em;
   color: #ffffff;
-  color: white;
+  font-weight: 600;
+}
+.card h2 {
+  font-size: var(--body-Bold);
+  line-height: 1.5em;
+  color: #C4F82A;
+  font-weight: 700;
+  margin: 0.2857142857em 0 1.7142857143em 0;
+}
+.card h3 {
+  font-size: var(--body-Bold);
+  line-height: 1.5em;
+  font-weight: 400;
+  color: #ffffff;
 }
 
 /* mediaqueries */
