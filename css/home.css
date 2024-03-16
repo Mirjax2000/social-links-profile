@@ -329,7 +329,7 @@ html ::selection {
 }
 
 .container {
-  width: 24em;
+  min-width: 24em;
   background-color: #1F1F1F;
   border-radius: 0.75em;
 }
@@ -390,4 +390,12 @@ html ::selection {
 }
 
 /* mediaqueries */
+@media only screen and (max-width: 780px) {
+  .container {
+    min-width: 20.4375em;
+  }
+  .card {
+    padding: 1.5em;
+  }
+}
 /*# sourceMappingURL=home.css.map */
