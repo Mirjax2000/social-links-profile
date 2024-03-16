@@ -83,6 +83,10 @@ $clr-br: $clr13 ;
 $clr-shd: $clr13 ;
 // ----------------------
 
+// transition
+$tr-time: .2s;
+//----------------------
+
 // --- break points ---
 // -------------------------------
 
@@ -121,7 +125,6 @@ $footmni: .825rem; //13.2px
 // --- pole ---
 // $pages: home, gallery, blog, contact, buttons;
 
-
 // icon colors
 $icons-color: (
     'cog':$clr13,
@@ -141,5 +144,4 @@ $btns-color: (
     'LearnMoreMain':$clr11,
     'comments':$clr11,
 );
-
 //--------------------------------

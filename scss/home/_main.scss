@@ -13,16 +13,14 @@
     @include flexCenter;
 }
 
-
 .container {
-    width: em(384, 16);
+    min-width: em(384, 16);
     background-color: $clr-bg-container ;
     border-radius: em($br-card, 16);
 }
 
 .card {
     text-align: center;
-
     padding: em(40, 16);
 
     &__img {
@@ -80,7 +78,7 @@
 
                 border-radius: em($br-btn, 14);
                 background-color: $clr-bg-card-btn ;
-                transition: ease-in-out .2s color, ease-in-out .2s background-color;
+                transition: ease-in-out $tr-time color, ease-in-out $tr-time background-color;
 
                 &:hover,
                 &:focus {
